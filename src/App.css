@@ -1,21 +1,37 @@
 .App {
-  text-align: center;
-}
 
+}
+h2{
+  font-size: 20px;
+}
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
   pointer-events: none;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header-link{
+  padding:3px;
+}
+.links-wrapper{
+  right:0;
+  position: absolute;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin:20px;
+}
+.main-logo{
+  width: 80px;
+  position: absolute;
+  left: 0;
+}
+.intro-span{
+  color: #427AA1;
+}
+.main-intro{
+  font-size:22px;
+}
+.App-header {
+  height: 85px;
   color: white;
 }
 
