@@ -17,7 +17,6 @@ h2{
   position: absolute;
   display: flex;
   flex-direction: column;
-  margin:20px;
 }
 .main-logo{
   width: 80px;
@@ -32,9 +31,19 @@ h2{
 }
 .App-header {
   height: 85px;
-  color: white;
+  
+  
+  display:flex;
+  
 }
-
+.hero-icons{
+  display:flex;
+}
+.hero{
+  color: white;
+  background: black;
+  height:100vh;
+}
 .App-link {
   color: #61dafb;
 }
