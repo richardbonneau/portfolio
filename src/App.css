@@ -16,7 +16,7 @@ h2{
   right:0;
   position: absolute;
   display: flex;
-  flex-direction: column;
+  margin:40px;
 }
 .main-logo{
   width: 80px;
@@ -27,21 +27,27 @@ h2{
   color: #427AA1;
 }
 .main-intro{
-  font-size:22px;
+  margin: 80px 40px;
+  font-size: 40px;
+}
+.hireme-wrapper{
+  /* display: flex;
+    justify-content: center; */
 }
 .App-header {
   height: 85px;
-  
-  
   display:flex;
-  
 }
 .hero-icons{
   display:flex;
 }
+.main-name{
+  margin: 40px;
+  font-size: 30px;
+}
 .hero{
-  color: white;
-  background: black;
+  /* color: white; */
+  background: #0000001c;
   height:100vh;
 }
 .App-link {
