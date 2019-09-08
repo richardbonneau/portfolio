@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import {IoIosArrowDown} from 'react-icons/io'
 import './App.css';
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
        </div>
        
       </header>
-      <h1 className="main-intro">I am a full stack <span className="intro-span">Web Developer</span> living in Montreal, currently working as a <span className="intro-span">Freelancer</span></h1>
+      <h1 className="main-intro">I am a full stack <span className="intro-span">Web and Mobile Developer</span> living in Montreal, currently working as a <span className="intro-span">Freelancer</span></h1>
       <div className="hireme-wrapper"><div className="btn">Hire me</div></div>
       
       <div className="hero-icons">
@@ -27,6 +28,9 @@ function App() {
         <FaGithub className="icon" />
         <FaLinkedin  className="icon" />
 
+      </div>
+      <div className="see-more-wrapper">
+      <IoIosArrowDown className="see-more"  />
       </div>
       
       </div>

@@ -55,8 +55,8 @@ h2{
 }
 .main-intro{
   color:white;
-  margin: 80px 40px;
-  font-size: 40px;
+  margin: 42px 40px;
+  font-size: 25px;
   z-index:10;
 }
 .hireme-wrapper{
@@ -71,8 +71,7 @@ h2{
   display:flex;
  position:absolute;
  bottom:40px;
- right:40px;
-
+ left: 20px;
 }
 .btn {
   color: white;
@@ -84,7 +83,7 @@ h2{
   border: 3px solid #fff;
   margin: 15px 30px;
   cursor: pointer;
-  padding:25px 80px;
+  padding: 10px 70px;
   -webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
@@ -94,7 +93,18 @@ h2{
   color:var(--mainColor);
 }
 
-
+.see-more-wrapper{
+  left: 50%;
+    position: absolute;
+    transform: translate(-50%,0);
+    bottom: 10px;
+}
+.see-more{
+  height:15px;
+  width:15px;
+  color:white;
+  cursor: pointer;
+}
 
 .main-name{
   margin: 40px;
@@ -121,5 +131,13 @@ h2{
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media(min-height: 700px){
+  .main-intro{
+
+    font-size: 32px;
+
   }
 }
