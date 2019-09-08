@@ -1,8 +1,22 @@
-.App {
-
+:root{
+  --mainColor:#124559;
+  --heroOverlay:#124559bf;
+  --accentColor:#2DE1FC;
+  --heroText:white;
 }
+
 h2{
   font-size: 20px;
+}
+.icon{
+  height:40px;
+  width:40px;
+  margin-left:10px;
+  color:white;
+  cursor: pointer;
+}
+.icon:hover{
+  color:var(--accentColor);
 }
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
@@ -11,8 +25,20 @@ h2{
 }
 .header-link{
   padding:3px;
+  color:var(--accentColor);
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	transition: all 1s;
+}
+
+.header-link:hover:after{
+
+  color:white;
 }
 .links-wrapper{
+ 
   right:0;
   position: absolute;
   display: flex;
@@ -24,11 +50,14 @@ h2{
   left: 0;
 }
 .intro-span{
-  color: #427AA1;
+  
+  color: var(--accentColor);
 }
 .main-intro{
+  color:white;
   margin: 80px 40px;
   font-size: 40px;
+  z-index:10;
 }
 .hireme-wrapper{
   /* display: flex;
@@ -40,16 +69,48 @@ h2{
 }
 .hero-icons{
   display:flex;
+ position:absolute;
+ bottom:40px;
+ right:40px;
+
 }
+.btn {
+  color: white;
+  font-size:20px;
+  z-index:1;
+  position:relative;
+  background:none;
+  display: inline-block;
+  border: 3px solid #fff;
+  margin: 15px 30px;
+  cursor: pointer;
+  padding:25px 80px;
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.btn:hover,.btn:active{
+ background:white;
+  color:var(--mainColor);
+}
+
+
+
 .main-name{
   margin: 40px;
   font-size: 30px;
+  z-index: 10;
+  color:white;
+  
 }
 .hero{
-  /* color: white; */
-  background: #0000001c;
   height:100vh;
+  background: url("/code.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgba(89,131,146,.87);
 }
+
 .App-link {
   color: #61dafb;
 }

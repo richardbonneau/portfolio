@@ -1,8 +1,9 @@
 import React from 'react';
-import {slide as Menu} from 'react-burger-menu';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import './App.css';
 
 function App() {
+ 
   return (
     <div className="App">
       <div className="hero">
@@ -12,19 +13,20 @@ function App() {
    
     
            <div className="links-wrapper">
-          <a className="header-link" href="#">Work</a>
-        <a className="header-link" href="#">Contact</a>
-        <a className="header-link" href="#">Français</a>
+          <div className="header-link">Work</div>
+        <div className="header-link">Contact</div>
+        <div className="header-link">Français</div>
        </div>
        
       </header>
       <h1 className="main-intro">I am a full stack <span className="intro-span">Web Developer</span> living in Montreal, currently working as a <span className="intro-span">Freelancer</span></h1>
-      <div className="hireme-wrapper"><button>Hire me</button></div>
+      <div className="hireme-wrapper"><div className="btn">Hire me</div></div>
       
       <div className="hero-icons">
-      <div>LinkedIn </div>
-      <div>GitHub </div>
-      <div>repl?</div>
+        
+        <FaGithub className="icon" />
+        <FaLinkedin  className="icon" />
+
       </div>
       
       </div>
@@ -35,6 +37,7 @@ function App() {
     <div>Send an Email</div>
     </div>
   );
+  
 }
 
 export default App;
