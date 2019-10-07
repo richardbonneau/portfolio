@@ -28,7 +28,8 @@ h2 {
   cursor: pointer;
 }
 .mobile-menu{
-  background: grey;
+  background: #111111e6;
+  color:white;
   position: absolute;
   padding: 52px;
   padding-top: 100px;
