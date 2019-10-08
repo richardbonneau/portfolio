@@ -6,8 +6,8 @@ import '../App.css';
 function Project(props) {
  
   return (
-    <div className="App">
-        <h4>{props.title}</h4>
+    <div className="project-container">
+        <h3>{props.title}</h3>
         <img src={props.image} className="project-image"/>
     </div>
   );
