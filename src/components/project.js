@@ -6,9 +6,17 @@ import '../App.css';
 function Project(props) {
  
   return (
-    <div className="project-container">
-        <h3>{props.title}</h3>
-        <img src={props.image} className="project-image"/>
+    <div className="projects-container">
+        
+        <img src={props.project.image} className="project-image"/>
+        <div className="project-container">
+          <h3>{props.project.title}</h3>
+      
+        <div>{props.project.description}</div>
+        <ul className="features-ul">{props.project.features.map(feat=><li>{feat}</li>)}</ul>
+        </div>
+        
+
     </div>
   );
   

@@ -1,11 +1,22 @@
 export const latestWork = [
     {
         title:"Goldrush",
-        image:"https://image.shutterstock.com/image-photo/large-beautiful-drops-transparent-rain-260nw-668593321.jpg",
+        image:"https://www.othneildrew.com/images/projects/phrase-hunter.gif",
+        description:"Event hosted in multiple cities across canada attended by thousands of participants",
+        features:[
+            "Javascript",
+            "node",
+            "mongo"
+        ]
     },
     {
         title:"Pomodoro Productivity",
-        image:"https://image.shutterstock.com/image-photo/large-beautiful-drops-transparent-rain-260nw-668593321.jpg",
+        image:"https://www.othneildrew.com/images/projects/phrase-hunter.gif",
+        description:"Event hosted in multiple cities across canada attended by thousands of participants",
+        features:[
+            "Flutter",
+            "Time management"
+        ]
     }
 
 ]

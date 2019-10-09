@@ -6,12 +6,26 @@
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 25px;
+  text-align: center;
 }
-.project-container{
+h3{
+  text-align: start;
+  padding-top: 0;
+  margin-top: 5px;
+}
+
+.projects-container{
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 100px;
+}
+.project-container{
+  width:83%;
+}
+.project-description{
+  
 }
 .icon {
   height: 40px;
@@ -19,6 +33,7 @@ h2 {
   margin-left: 10px;
   color: white;
   cursor: pointer;
+  outline: none;
 }
 .icon:hover {
   color: var(--accentColor);
@@ -35,20 +50,19 @@ h2 {
 .mobile-menu{
   background: #111111e6;
   color:white;
-  position: absolute;
-  padding: 52px;
-  padding-top: 100px;
+  position: fixed;
+padding: 140px 70px 0 30px;
   right: -200px;
-
+  margin: 0;
   top: -55px;
   height: 100vh;
   z-index: 90;
   transition: all 0.3s ease-out;
   list-style-type: none;
-  display:none;
+  display:block;
 }
 .mobile-menu.open{
-  display:block;
+ 
   right: -40px;
 }
 .App-logo {
@@ -119,8 +133,7 @@ h2 {
   -moz-transition: all 0.3s;
   transition: all 0.3s;
 }
-.btn:hover,
-.btn:active {
+.btn:hover {
   background: white;
   color: var(--mainColor);
 }
@@ -138,8 +151,8 @@ h2 {
   bottom: 10px;
 }
 .see-more {
-  height: 15px;
-  width: 15px;
+  height: 20px;
+  width: 20px;
   color: white;
   cursor: pointer;
 }
@@ -161,7 +174,13 @@ h2 {
 .App-link {
   color: #61dafb;
 }
-
+.mobile-menu>li{
+  font-size:20px;
+  padding:10px;
+}
+.features-ul{
+  padding-left: 20px;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
