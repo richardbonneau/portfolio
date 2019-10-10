@@ -107,10 +107,12 @@ function App() {
         <Project project={project} />
       ))}
       <div id="contact" />
-      <h2>Looking to start a project? Let's talk</h2>
-      <div>Connect on LinkedIn</div>
-      <div>Message on Facebook</div>
-      <div>Send an Email</div>
+      <h2>Looking to start a project?</h2>
+      <a className="contact-btn linkedin">Connect on LinkedIn</a>
+      <div />
+      <a className="contact-btn facebook">Message on Facebook</a>
+      <div />
+      <a className="contact-btn email">Send an Email</a>
     </div>
   );
 }

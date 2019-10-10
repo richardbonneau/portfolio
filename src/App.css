@@ -19,14 +19,20 @@ h3{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 100px;
+  margin: 75px 0;
 }
 .project-container{
   width:83%;
 }
-.project-description{
-  
+.contact-btn{
+  display: inline-block;
+  padding: 10px;
+  background: blue;
+  margin: 5px;
 }
+.facebook{background:#002e92}
+.linkedin{background:#6093ff}
+.email{background:#d60a0a}
 .icon {
   height: 40px;
   width: 40px;
