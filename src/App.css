@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Libre+Franklin|Open+Sans+Condensed:300&display=swap');
 :root {
   --mainColor: #124559;
   --heroOverlay: #124559bf;
   --accentColor: #2de1fc;
   --heroText: white;
+}
+*{
+  font-family: 'Libre Franklin', sans-serif;
 }
 
 h2 {
@@ -28,8 +32,10 @@ h3{
   display: inline-block;
   padding: 10px;
   color: black;
+  font-size: 12px;
   margin: 5px;
   text-decoration: none;
+  font-family: 'Archivo Black', sans-serif;
 }
 .facebook{background:#4267B2}
 .linkedin{background:#096EA3}
@@ -112,8 +118,7 @@ padding: 140px 70px 0 30px;
   z-index: 10;
 }
 .hireme-wrapper {
-  /* display: flex;
-    justify-content: center; */
+    font-family: 'Archivo Black', sans-serif;
 }
 .App-header {
   height: 85px;
@@ -169,10 +174,11 @@ padding: 140px 70px 0 30px;
   font-size: 20px;
   z-index: 10;
   color: white;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 .hero {
   height: 100vh;
-  background: url("/code.jpg");
+  background: url("/images/code.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: inset 0 0 0 1000px rgba(48, 66, 72, 0.87);
@@ -209,3 +215,5 @@ padding: 140px 70px 0 30px;
     font-size: 32px;
   }
 }
+
+

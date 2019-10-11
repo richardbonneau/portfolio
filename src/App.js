@@ -108,6 +108,7 @@ function App() {
       ))}
       <div id="contact" />
       <h2>Looking to start a project?</h2>
+      <div>I am open to freelance contracts and remote work. Let's talk!</div>
       <a className="contact-btn linkedin" href="https://www.linkedin.com/in/richard-bonneau/" target="_blank">Connect on LinkedIn</a>
       <div />
       <a className="contact-btn facebook">Message on Facebook</a>
