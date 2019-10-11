@@ -27,12 +27,13 @@ h3{
 .contact-btn{
   display: inline-block;
   padding: 10px;
-  background: blue;
+  color: black;
   margin: 5px;
+  text-decoration: none;
 }
-.facebook{background:#002e92}
-.linkedin{background:#6093ff}
-.email{background:#d60a0a}
+.facebook{background:#4267B2}
+.linkedin{background:#096EA3}
+.email{background:#F1493C}
 .icon {
   height: 40px;
   width: 40px;

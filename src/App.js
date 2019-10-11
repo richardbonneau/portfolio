@@ -108,11 +108,11 @@ function App() {
       ))}
       <div id="contact" />
       <h2>Looking to start a project?</h2>
-      <a className="contact-btn linkedin">Connect on LinkedIn</a>
+      <a className="contact-btn linkedin" href="https://www.linkedin.com/in/richard-bonneau/" target="_blank">Connect on LinkedIn</a>
       <div />
       <a className="contact-btn facebook">Message on Facebook</a>
       <div />
-      <a className="contact-btn email">Send an Email</a>
+      <a className="contact-btn email" href="mailto:info@richardbonneau.com" target="_blank">Send an Email</a>
     </div>
   );
 }
