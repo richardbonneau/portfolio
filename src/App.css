@@ -36,6 +36,9 @@ h3{
   text-align: center;
   position: relative;
 }
+.contact-buttons-container{
+  margin-top:85px;
+}
 .contact-btn{
   display: inline-block;
   padding: 12px;
@@ -51,7 +54,8 @@ h3{
   width: 20px;
 }
 .contact-text{
-  font-size:18px;
+  font-size:20px;
+  margin-top:36px;
 }
 .facebook{background:#4267B2}
 .linkedin{background:#096EA3}
