@@ -71,7 +71,9 @@ function App() {
             >
               Work
             </div>
-            <div className="header-link">Contact</div>
+            <div onClick={() => {
+                  navLinkClicked("contact");
+                }} className="header-link">Contact</div>
             <div className="header-link">Français</div>
           </div>
         </header>

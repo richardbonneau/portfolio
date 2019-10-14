@@ -42,9 +42,9 @@ h3{
 .contact-btn{
   display: inline-block;
   padding: 12px;
-  width:285px;
+  width:85%;
   color: black;
-  font-size: 12px;
+  font-size: 14px;
   margin: 5px;
   text-decoration: none;
   font-family: 'Archivo Black', sans-serif;
@@ -55,7 +55,7 @@ h3{
 }
 .contact-text{
   font-size:20px;
-  margin-top:36px;
+  margin: 36px 20px 0 20px;
 }
 .facebook{background:#4267B2}
 .linkedin{background:#096EA3}
@@ -158,7 +158,7 @@ padding: 140px 70px 0 30px;
   background: none;
   display: inline-block;
   border: 3px solid #fff;
-  margin: 15px 30px;
+  margin: 50px 30px;
   cursor: pointer;
   padding: 10px 70px;
   -webkit-transition: all 0.3s;
@@ -237,11 +237,15 @@ padding: 140px 70px 0 30px;
   .hamburger{
     display:none;
   }
+  .contact-btn{
+    width:440px;
+  }
 }
 @media (min-height: 700px) {
   .main-intro {
     font-size: 32px;
   }
+
 }
 
 
