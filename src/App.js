@@ -1,7 +1,13 @@
 import React, { useState, useEffect } from "react";
 import Project from "./components/project";
-import { FaGithub, FaLinkedin, FaBars, FaClose, FaTimes } from "react-icons/fa";
-import { IoIosArrowDown } from "react-icons/io";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaBars,
+  FaTimes,
+  FaFacebookMessenger
+} from "react-icons/fa";
+import { IoIosArrowDown, IoMdMail } from "react-icons/io";
 import "./App.css";
 import { latestWork } from "./utils/data.js";
 import scrollToElement from "scroll-to-element";
@@ -10,7 +16,7 @@ function App() {
   const [isMenuOpened, setMenuOpened] = useState(false);
 
   function navLinkClicked(selection) {
-    scrollToElement(`#${selection}`,{ease:'inOutCube'});
+    scrollToElement(`#${selection}`, { ease: "inOutCube" });
     setMenuOpened(false);
   }
 
@@ -39,7 +45,6 @@ function App() {
             </div>
 
             <ul className={isMenuOpened ? "mobile-menu open" : "mobile-menu"}>
-              
               <li
                 onClick={() => {
                   navLinkClicked("work");
@@ -78,10 +83,14 @@ function App() {
           <span className="intro-span">Freelancer</span>
         </h1>
         <div className="hireme-wrapper">
-          <div  onClick={() => {
-            setTimeout(()=>navLinkClicked("contact"),200)
-                  
-                }} className="btn">Hire me</div>
+          <div
+            onClick={() => {
+              setTimeout(() => navLinkClicked("contact"), 200);
+            }}
+            className="btn"
+          >
+            Hire me
+          </div>
         </div>
         <div className="hero-icons">
           <a href="https://www.github.com/richardbonneau" target="_blank">
@@ -95,9 +104,12 @@ function App() {
           </a>
         </div>
         <div className="see-more-wrapper">
-          <IoIosArrowDown onClick={() => {
-                  navLinkClicked("work");
-                }} className="see-more" />
+          <IoIosArrowDown
+            onClick={() => {
+              navLinkClicked("work");
+            }}
+            className="see-more"
+          />
         </div>
       </div>
 
@@ -106,14 +118,40 @@ function App() {
       {latestWork.map(project => (
         <Project project={project} />
       ))}
-      <div id="contact" />
-      <h2>Looking to start a project?</h2>
-      <div>I am open to freelance contracts and remote work. Let's talk!</div>
-      <a className="contact-btn linkedin" href="https://www.linkedin.com/in/richard-bonneau/" target="_blank">Connect on LinkedIn</a>
-      <div />
-      <a className="contact-btn facebook">Message on Facebook</a>
-      <div />
-      <a className="contact-btn email" href="mailto:info@richardbonneau.com" target="_blank">Send an Email</a>
+
+      <div className="contact-container">
+        <h2>Interested in working together?</h2>
+        <div id="contact" />
+        <div className="contact-text">I am open to freelance contracts and remote work. Let's talk!</div>
+        <div className="contact-buttons-container">
+          <a
+            className="contact-btn linkedin"
+            href="https://www.linkedin.com/in/richard-bonneau/"
+            target="_blank"
+          >
+            <FaLinkedin className="contact-icons" /> Connect on LinkedIn
+          </a>
+          <div />
+          <a
+            className="contact-btn facebook"
+            href="https://www.facebook.com/richard.bonneau.35"
+            target="_blank"
+          >
+            <FaFacebookMessenger className="contact-icons" /> Message on Facebook
+          </a>
+          <div />
+          <a
+            className="contact-btn email"
+            href="mailto:info@richardbonneau.com"
+            target="_blank"
+          >
+            {" "}
+            <IoMdMail className="contact-icons" /> Send an Email
+          </a>
+        </div>
+        <div className="footer">© Richard Bonneau {new Date().getFullYear()}</div>
+      </div>
+      
     </div>
   );
 }
