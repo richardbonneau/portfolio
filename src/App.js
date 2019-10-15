@@ -118,12 +118,13 @@ function App() {
 
       <div id="work" />
       <h2>Latest Work</h2>
-      {latestWork.map(project => (
-        <Project project={project} />
-      ))}
+      {latestWork.map((project,i) => {
+        let flexDirection = ""
+      if(i%2===1)flexDirection = "project-container-reversed"
+      return <Project project={project} flexDirection={flexDirection} /> })}
 
       <div className="contact-container">
-        <h2>Interested in working together?</h2>
+        <h2 className="contact-subtitle">Interested in working together?</h2>
         <div id="contact" />
         <div className="contact-text">I am open to freelance contracts and remote work. Let's talk!</div>
         <div className="contact-buttons-container">

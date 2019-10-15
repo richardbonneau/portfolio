@@ -3,12 +3,12 @@ import { FaCode, FaDiceD6 } from 'react-icons/fa';
 import '../App.css';
 
 function Project(props) {
- 
+ console.log("props",)
   return (
-    <div className="projects-container">
+    <div className={`project-container ${props.flexDirection}`} style={{flexDirection:props.flexDirection}}>
         
         <img src={props.project.image} className="project-image"/>
-        <div className="project-container">
+        <div className="project-details">
           <h3>{props.project.title}</h3>
       
         <div>{props.project.description}</div>

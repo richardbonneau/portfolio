@@ -21,13 +21,13 @@ h3{
   margin-top: 5px;
 }
 
-.projects-container{
+.project-container{
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 75px 0;
 }
-.project-container{
+.project-details{
   width:83%;
 }
 .contact-container{
@@ -177,6 +177,7 @@ padding: 140px 70px 0 30px;
 }
 .project-image {
   width: 85%;
+  margin-bottom: 15px;
 }
 .see-more-wrapper {
   left: 50%;
@@ -248,8 +249,7 @@ background: none;;
 .footer{
   position: absolute;
   bottom: 10px;
-  left: 50%;
-  transform: translate(-50%,0);
+
   width: 100%;
   font-size:12px;
 }
@@ -271,6 +271,9 @@ background: none;;
   .contact-btn{
     width:440px;
   }
+  .contact-subtitle{
+    padding-top:105px;
+  }
 }
 @media (min-width:768px){
   .main-intro{
@@ -279,18 +282,66 @@ background: none;;
   .main-name{
     font-size:25px;
   }
+  .project-image{
+    width:70%;
+  }
+  .project-details{
+    width: 70%;
+  }
 }
 @media(min-width:1024px){
   .main-intro{
     font-size: 50px;
-    margin: 66px 40px;
+    margin: 85px 40px;
   }
   .hero-btn{
     padding: 10px 130px;
     font-size:25px;
   }
+  .project-container{
+    flex-direction: row;
+    margin: 125px 20px;
+  }
+  .project-container-reversed{
+    flex-direction: row-reverse;
+  }
+  .project-details{
+    margin: 0 15px;
+    width:100%;
+  }
+  .reference-btn{
+    padding: 9px 0;
+    width: 165px;
+    font-size: 12px;
+  }
+  .contact-buttons-container {
+    margin-top: 100px;
+}
+.contact-btn {
+  padding:20px;
+  margin:10px;
+}
+.contact-subtitle{
+  font-size: 40px;
+}
+
+ 
 
 }
+@media(min-width:1150px){
+  .project-container{
+    margin: 125px 70px;
+  }
+}
+@media(min-width:1440px){
+  .main-intro{
+    margin: 85px 430px 85px 30px;
+  }
+
+  
+}
+
+
 @media (min-height: 700px) {
   .main-intro {
     font-size: 32px;
