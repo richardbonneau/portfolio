@@ -1,6 +1,5 @@
 import React from 'react';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import {IoIosArrowDown} from 'react-icons/io'
+import { FaCode, FaDiceD6 } from 'react-icons/fa';
 import '../App.css';
 
 function Project(props) {
@@ -14,6 +13,17 @@ function Project(props) {
       
         <div>{props.project.description}</div>
         <ul className="features-ul">{props.project.features.map(feat=><li>{feat}</li>)}</ul>
+        </div>
+        <div className="reference-btns-container">
+          {props.project.projectUrl
+          ?<a className="reference-btn" href={props.project.projectUrl} target="_blank"><FaDiceD6 className="contact-icons" /> Link to project</a>
+          :<a className="reference-btn reference-btn-not-available"><FaDiceD6 className="contact-icons" /> Not publicly available</a>
+          }
+                   {props.project.projectUrl
+          ?<a className="reference-btn" href={props.project.codeUrl} target="_blank"><FaCode className="contact-icons" /> Link to code</a>
+          :<a className="reference-btn reference-btn-not-available"><FaCode className="contact-icons" /> Not publicly available</a>
+          }
+          
         </div>
         
 

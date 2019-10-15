@@ -7,7 +7,9 @@ export const latestWork = [
             "React",
             "Node Express",
             "MongoDB",
-        ]
+        ],
+        projectUrl:null,
+        codeUrl:null
     },
     {
         title:"Pomodoro Productivity",
@@ -16,7 +18,20 @@ export const latestWork = [
         features:[
             "Flutter",
             "Custom time handling"
-        ]
+        ],
+        projectUrl:"https://play.google.com/store/apps/details?id=com.richardbonneau.pomodoro_productivity",
+        codeUrl:"https://github.com/richardbonneau/pomodoro_flutter"
+    },
+    {
+        title:"Sweeper.net",
+        image:"https://img.itch.zone/aW1nLzE2NzQ4OTUuanBn/347x500/jIlllj.jpg",
+        description:"Game made within a month for the game jam 'Game Off 2018' held by github. The game won the 31st place out of 324 for theme interpretation and got partly funded on kickstarter, but didn't reach its goal.",
+        features:[
+            "Unity",
+            "C#",
+        ],
+        projectUrl:"https://sixthmoon.itch.io/sweeper-net",
+        codeUrl:"https://github.com/richardbonneau/Game_Off_2018"
     },
     {
         title:"Inventorify",
@@ -25,7 +40,9 @@ export const latestWork = [
         features:[
             "React",
             "Polaris component library",
-        ]
+        ],
+        projectUrl:null,
+        codeUrl:null
     }
 
 ]

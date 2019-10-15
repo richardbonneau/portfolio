@@ -84,12 +84,13 @@ function App() {
           Montreal, currently working as a{" "}
           <span className="intro-span">Freelancer</span>
         </h1>
+
         <div className="hireme-wrapper">
           <div
             onClick={() => {
-              setTimeout(() => navLinkClicked("contact"), 200);
+              navLinkClicked("contact")
             }}
-            className="btn"
+            className="hero-btn"
           >
             Hire me
           </div>

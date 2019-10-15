@@ -112,6 +112,8 @@ padding: 140px 70px 0 30px;
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
   transition: all 1s;
+  margin: 0 9px;
+  font-size: 18px;
 }
 
 .header-link:hover:after {
@@ -150,7 +152,7 @@ padding: 140px 70px 0 30px;
   bottom: 40px;
   left: 20px;
 }
-.btn {
+.hero-btn {
   color: white;
   font-size: 20px;
   z-index: 1;
@@ -165,8 +167,8 @@ padding: 140px 70px 0 30px;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
 }
-.btn:hover {
-  background: var(--accentColor);
+.hero-btn:hover {
+  background: white;
   color: var(--mainColor);
 }
 .burger-menu {
@@ -182,9 +184,38 @@ padding: 140px 70px 0 30px;
   transform: translate(-50%, 0);
   bottom: 10px;
 }
+.reference-btns-container{
+  display:block;
+}
+.reference-btn{
+  color: black;
+  display: inline-block;
+  border: 3px solid #000;
+  margin: 10px 30px;
+  cursor: pointer;
+  padding: 15px 0;
+  transition: all 0.3s;
+  text-decoration: none;
+  width: 250px;
+  text-align: center;
+}
+.reference-btn:hover{
+  color: white;
+  background:black;
+}
+.reference-btn-not-available{
+  color:red;
+  border-color:red;
+  text-decoration: line-through;
+}
+.reference-btn-not-available:hover{
+color:red;
+background: none;;
+}
 .see-more {
-  height: 20px;
-  width: 20px;
+  height: 25px;
+  width: 25px;
+  padding: 10px 40px;
   color: white;
   cursor: pointer;
 }
@@ -240,6 +271,25 @@ padding: 140px 70px 0 30px;
   .contact-btn{
     width:440px;
   }
+}
+@media (min-width:768px){
+  .main-intro{
+    font-size: 35px;
+  }
+  .main-name{
+    font-size:25px;
+  }
+}
+@media(min-width:1024px){
+  .main-intro{
+    font-size: 50px;
+    margin: 66px 40px;
+  }
+  .hero-btn{
+    padding: 10px 130px;
+    font-size:25px;
+  }
+
 }
 @media (min-height: 700px) {
   .main-intro {
