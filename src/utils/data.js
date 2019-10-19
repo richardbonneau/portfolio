@@ -35,7 +35,7 @@ export const latestWork = [
     },
     {
         title:"Inventorify",
-        image:"https://www.othneildrew.com/images/projects/phrase-hunter.gif",
+        image:"/images/inventorify.gif",
         description:"Shopify App made to handle a large quantity of products in the admin panel.",
         features:[
             "React",

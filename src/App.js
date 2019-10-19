@@ -14,10 +14,16 @@ import scrollToElement from "scroll-to-element";
 
 function App() {
   const [isMenuOpened, setMenuOpened] = useState(false);
+  const [mailName, setMailName] = useState("");
+  const [mailEmail, setMailEmail] = useState("");
+
 
   function navLinkClicked(selection) {
     scrollToElement(`#${selection}`, { ease: "inOutCube" });
     setMenuOpened(false);
+  }
+  function onChange(event){
+    
   }
 
   useEffect(() => {
@@ -152,6 +158,12 @@ function App() {
             {" "}
             <IoMdMail className="contact-icons" /> Send an Email
           </a>
+          <form>
+            <input type="text" placeholder="name" />
+            <input type="text" placeholder="email" />
+            <textarea onChange={onChange} />
+            <input type="submit" />
+          </form>
         </div>
         <div className="footer">© Richard Bonneau {new Date().getFullYear()}</div>
       </div>

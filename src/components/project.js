@@ -10,7 +10,7 @@ function Project(props) {
         <img src={props.project.image} className="project-image"/>
         <div className="project-details">
           <h3>{props.project.title}</h3>
-      
+      <div>
         <div>{props.project.description}</div>
         <ul className="features-ul">{props.project.features.map(feat=><li>{feat}</li>)}</ul>
         </div>
@@ -22,10 +22,9 @@ function Project(props) {
                    {props.project.projectUrl
           ?<a className="reference-btn" href={props.project.codeUrl} target="_blank"><FaCode className="contact-icons" /> Link to code</a>
           :<a className="reference-btn reference-btn-not-available"><FaCode className="contact-icons" /> Not publicly available</a>
-          }
-          
+          }   
         </div>
-        
+        </div>
 
     </div>
   );
