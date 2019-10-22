@@ -14,8 +14,7 @@ import scrollToElement from "scroll-to-element";
 
 function App() {
   const [isMenuOpened, setMenuOpened] = useState(false);
-  const [mailName, setMailName] = useState("");
-  const [mailEmail, setMailEmail] = useState("");
+  const [language, setLanguage] = useState("en")
 
 
   function navLinkClicked(selection) {
@@ -158,12 +157,12 @@ function App() {
             {" "}
             <IoMdMail className="contact-icons" /> Send an Email
           </a>
-          <form>
+          {/* <form>
             <input type="text" placeholder="name" />
             <input type="text" placeholder="email" />
             <textarea onChange={onChange} />
             <input type="submit" />
-          </form>
+          </form> */}
         </div>
         <div className="footer">© Richard Bonneau {new Date().getFullYear()}</div>
       </div>
