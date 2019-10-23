@@ -9,7 +9,7 @@ import {
 } from "react-icons/fa";
 import { IoIosArrowDown, IoMdMail } from "react-icons/io";
 import "./App.css";
-import { latestWork } from "./utils/data.js";
+import { latestWork, translation } from "./utils/data.js";
 import scrollToElement from "scroll-to-element";
 
 function App() {
@@ -21,8 +21,9 @@ function App() {
     scrollToElement(`#${selection}`, { ease: "inOutCube" });
     setMenuOpened(false);
   }
-  function onChange(event){
-    
+  function changeLanguage(event){
+    language === "en" ? setLanguage("fr") : setLanguage("en");
+    setMenuOpened(false);
   }
 
   useEffect(() => {
@@ -56,7 +57,7 @@ function App() {
                 }}
                 href="#"
               >
-                Work
+                {translation[language].work}
               </li>
               <li
                 onClick={() => {
@@ -66,7 +67,7 @@ function App() {
               >
                 Contact
               </li>
-              <li href="#">Francais</li>
+              <li href="#" onClick={changeLanguage}>{translation[language].language}</li>
             </ul>
             <div
               onClick={() => {
@@ -74,20 +75,20 @@ function App() {
               }}
               className="header-link"
             >
-              Work
+             {translation[language].work}
             </div>
             <div onClick={() => {
                   navLinkClicked("contact");
                 }} className="header-link">Contact</div>
-            <div className="header-link">Français</div>
+            <div className="header-link" onClick={changeLanguage}>{translation[language].language}</div>
           </div>
         </header>
 
         <h1 className="main-intro">
-          I am a full stack{" "}
-          <span className="intro-span">Web and Mobile Developer</span> living in
-          Montreal, currently working as a{" "}
-          <span className="intro-span">Freelancer</span>
+        {translation[language].heroTextPartOne}
+          <span className="intro-span">{translation[language].heroTextPartTwo}</span>
+          {translation[language].heroTextPartThree}
+          <span className="intro-span">{translation[language].heroTextPartFour}</span>
         </h1>
 
         <div className="hireme-wrapper">
@@ -97,7 +98,7 @@ function App() {
             }}
             className="hero-btn"
           >
-            Hire me
+            {translation[language].hireMe}
           </div>
         </div>
         <div className="hero-icons">
@@ -122,23 +123,23 @@ function App() {
       </div>
 
       <div id="work" />
-      <h2>Latest Work</h2>
+      <h2>{translation[language].latestWork}</h2>
       {latestWork.map((project,i) => {
         let flexDirection = ""
       if(i%2===1)flexDirection = "project-container-reversed"
-      return <Project project={project} flexDirection={flexDirection} /> })}
+      return <Project project={project} flexDirection={flexDirection} language={language} /> })}
 
       <div className="contact-container">
-        <h2 className="contact-subtitle">Interested in working together?</h2>
+        <h2 className="contact-subtitle">{translation[language].workingTogether}</h2>
         <div id="contact" />
-        <div className="contact-text">I am open to freelance contracts and remote work. Let's talk!</div>
+        <div className="contact-text">{translation[language].letsTalk}</div>
         <div className="contact-buttons-container">
           <a
             className="contact-btn linkedin"
             href="https://www.linkedin.com/in/richard-bonneau/"
             target="_blank"
           >
-            <FaLinkedin className="contact-icons" /> Connect on LinkedIn
+            <FaLinkedin className="contact-icons" /> {translation[language].linkedIn}
           </a>
           <div />
           <a
@@ -146,7 +147,7 @@ function App() {
             href="https://www.facebook.com/richard.bonneau.35"
             target="_blank"
           >
-            <FaFacebookMessenger className="contact-icons" /> Message on Facebook
+            <FaFacebookMessenger className="contact-icons" />{translation[language].facebook}
           </a>
           <div />
           <a
@@ -155,7 +156,7 @@ function App() {
             target="_blank"
           >
             {" "}
-            <IoMdMail className="contact-icons" /> Send an Email
+            <IoMdMail className="contact-icons" /> {translation[language].email}
           </a>
           {/* <form>
             <input type="text" placeholder="name" />
