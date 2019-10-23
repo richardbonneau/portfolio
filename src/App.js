@@ -94,11 +94,11 @@ function App() {
         <div className="hireme-wrapper">
           <div
             onClick={() => {
-              navLinkClicked("contact")
+              navLinkClicked("work")
             }}
             className="hero-btn"
           >
-            {translation[language].hireMe}
+            {translation[language].explore}
           </div>
         </div>
         <div className="hero-icons">

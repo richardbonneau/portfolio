@@ -21,24 +21,21 @@ export const latestWork = [
     {
         title:"Pomodoro Productivity",
         image:"/images/pomo.gif",
-        description:"Lightweight productivity mobile app inspired by the Pomodoro method.",
-        features:{
-            en:[
-                "Flutter",
-                "Custom time handling"
-            ],
-            fr:[
-                "Flutter",
-                "Custom time handling"
-            ],
+        description:{
+            en:"Lightweight productivity mobile app inspired by the Pomodoro method.",
+            fr:"Application mobile qui s'inspire de la Technique de productivité Pomodoro",
         },
+        features:["Flutter"],
         projectUrl:"https://play.google.com/store/apps/details?id=com.richardbonneau.pomodoro_productivity",
         codeUrl:"https://github.com/richardbonneau/pomodoro_flutter"
     },
     {
         title:"Sweeper.net",
         image:"https://img.itch.zone/aW1nLzE2NzQ4OTUuanBn/347x500/jIlllj.jpg",
-        description:"Game made within a month for the game jam 'Game Off 2018' held by github. The game won the 31st place out of 324 for theme interpretation and got partly funded on kickstarter, but didn't reach its goal.",
+        description:{
+            en:"Game made within a month for the game jam 'Game Off 2018' held by github. The game won the 31st place out of 324 for theme interpretation and got partly funded on kickstarter, but didn't reach its goal.",
+            fr:"Jeu réalisé dans un délai d'un mois pour le GameJam 'Game Off 2018' organisé par github. Le jeu a remporté la 31e place sur 324 pour l'interprétation thématique et a été partiellement financé sur Kickstarter, mais n'a pas atteint son objectif"
+        },
         features:[
             "Unity",
             "C#",
@@ -49,7 +46,10 @@ export const latestWork = [
     {
         title:"Inventorify",
         image:"/images/inventorify.gif",
-        description:"Shopify App made to handle a large quantity of products in the admin panel.",
+        description:{
+            en:"Shopify App made to handle a large quantity of products in the admin panel.",
+            fr:"Application Shopify conçue afin de gérer une grande quantité de produits à l'interne, sur le panneau d'administrateur",
+        },
         features:{
             en:[
                 "React",
@@ -75,7 +75,7 @@ export const translation = {
         heroTextPartTwo:"Web and Mobile Developer ",
         heroTextPartThree:"living in Montreal, currently working as a ",
         heroTextPartFour:"Freelancer",
-        hireMe:"Hire Me",
+        explore:"Explore",
         latestWork:"Latest Work",
         linkProject:"Link to Project",
         linkCode:"Link to Code",
@@ -93,7 +93,7 @@ export const translation = {
         heroTextPartTwo:"Développeur d'applications Web et Mobile ",
         heroTextPartThree:"situé à Montréal, travaillant présentement en tant que ",
         heroTextPartFour:"Pigiste",
-        hireMe:"Engagez-moi",
+        explore:"Explorez",
         latestWork:"Projets Récents",
         linkProject:"Lien vers le projet",
         linkCode:"Lien vers le code",

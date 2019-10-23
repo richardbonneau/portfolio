@@ -14,7 +14,7 @@
 #root{
   display: flex;
   justify-content: center;
-  background:grey;
+  background:#424854;
 }
 .App{
   max-width: 2000px;
