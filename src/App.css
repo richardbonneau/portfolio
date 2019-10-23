@@ -11,6 +11,15 @@
   user-select: none;
   -webkit-tap-highlight-color: transparent;
 }
+#root{
+  display: flex;
+  justify-content: center;
+  background:grey;
+}
+.App{
+  max-width: 2000px;
+  background: white;
+}
 
 h2 {
   font-size: 25px;
@@ -128,11 +137,6 @@ h3 {
 .mobile-menu.open {
   right: -40px;
 }
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
 .header-link {
   display: none;
   padding: 3px;
@@ -154,9 +158,9 @@ h3 {
 }
 .links-wrapper {
   right: 0;
-  position: absolute;
   display: flex;
   margin: 40px;
+  position: absolute;
 }
 .main-logo {
   width: 80px;
@@ -178,6 +182,7 @@ h3 {
 .App-header {
   height: 85px;
   display: flex;
+  justify-content: space-between;
 }
 .hero-icons {
   display: flex;
@@ -312,6 +317,9 @@ h3 {
   }
   .contact-subtitle {
     padding-top: 105px;
+  }
+  .links-wrapper{
+    position: static;
   }
 }
 @media (min-width: 768px) {
