@@ -2,7 +2,7 @@
 :root {
   --mainColor: #7f8688;
   --heroOverlay: #929d9e;
-  --accentColor:  #80c0ff;
+  --accentColor:  #175096;
   --heroText: white;
   --unavailable: #E63C30;
 }
@@ -278,7 +278,7 @@ h3 {
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
-  box-shadow: inset 0 0 0 1000px rgba(33, 33, 33, 0.55);
+  box-shadow: inset 0 0 0 1000px rgba(33, 33, 33, 0.41);
 }
 
 .App-link {
