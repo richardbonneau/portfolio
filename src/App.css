@@ -189,7 +189,7 @@ h3 {
   display: flex;
   position: absolute;
   bottom: 40px;
-  left: 20px;
+  margin-left: 20px;
 
 }
 .hero-btn {
