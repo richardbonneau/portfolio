@@ -25,7 +25,7 @@ export const latestWork = [
             en:"Lightweight productivity mobile app inspired by the Pomodoro method.",
             fr:"Application mobile qui s'inspire de la Technique de productivité Pomodoro",
         },
-        features:["Flutter"],
+        features:["Flutter", "Push Notifications"],
         projectUrl:"https://play.google.com/store/apps/details?id=com.richardbonneau.pomodoro_productivity",
         codeUrl:"https://github.com/richardbonneau/pomodoro_flutter"
     },
