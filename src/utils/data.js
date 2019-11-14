@@ -14,6 +14,7 @@ export const latestWork = [
             "React",
             "Node Express",
             "MongoDB",
+            "Firebase Auth"
         ],
         projectUrl:null,
         codeUrl:null
