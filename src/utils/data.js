@@ -11,7 +11,8 @@ export const latestWork = [
       en: ["Flutter", "Google AdMob", "In app purchases"],
       fr: ["Flutter", "Google AdMob", "Achat dans l'application"]
     },
-    projectUrl: "https://www.freelancify.io/",
+    projectUrl:
+      "https://play.google.com/store/apps/details?id=com.richard.gloomhaven_assistant",
     codeUrl: null
   },
   {
@@ -22,9 +23,8 @@ export const latestWork = [
       fr: `Freelancify est un service de invoicing gratuit pour les pigistes. `
     },
     features: ["React", "Firebase Auth", "Firebase Firestore"],
+    projectUrl: "https://www.freelancify.io/",
 
-    projectUrl:
-      "https://play.google.com/store/apps/details?id=com.richard.gloomhaven_assistant",
     codeUrl: null
   },
   {
