@@ -4,7 +4,7 @@ export const latestWork = [
     image: "/images/gloomhaven.gif",
     description: {
       en: `Gloomhaven is a board game where you have to keep track of a lot of things. 
-       Gloomhaven Assistant aims to eliminate those for a smooth gameplay.`,
+       Gloomhaven Assistant aims to handle those for a smooth gameplay.`,
       fr: `Gloomhaven Assistant vise à éliminer les tâches les plus longues que nécessite le jeu de société.`
     },
     features: {
