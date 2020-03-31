@@ -20,7 +20,7 @@ export const latestWork = [
     image: "/images/freelancify.gif",
     description: {
       en: `Freelancify is a free invoicing service for freelancers.`,
-      fr: `Freelancify est un service de invoicing gratuit pour les pigistes. `
+      fr: `Freelancify est un service de facturation gratuit pour les pigistes. `
     },
     features: ["React", "Firebase Auth", "Firebase Firestore"],
     projectUrl: "https://www.freelancify.io/",
