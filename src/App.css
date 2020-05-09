@@ -187,6 +187,7 @@ h3 {
 }
 .hireme-wrapper {
   font-family: "Archivo Black", sans-serif;
+  display: none;
 }
 .App-header {
   height: 85px;
@@ -332,6 +333,9 @@ h3 {
   }
 }
 @media (min-width: 768px) {
+  .hireme-wrapper {
+    display: block;
+  }
   .main-intro {
     font-size: 35px;
   }
