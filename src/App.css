@@ -83,6 +83,9 @@ h3 {
 .linkedin {
   background: #096ea3;
 }
+.twitter {
+  background: #19608e;
+}
 .email {
   background: #f1493c;
 }
@@ -90,13 +93,17 @@ h3 {
   color: black;
   background: #5f94ff;
 }
+.twitter:hover {
+  color: black;
+  background: #109fea;
+}
 .linkedin:hover {
   color: black;
   background: #109fea;
 }
 .email:hover {
   color: black;
-  background: #ea6e64;
+  background: #da7c75;
 }
 .icon {
   height: 40px;
@@ -188,8 +195,11 @@ h3 {
 .hero-icons {
   display: flex;
   position: absolute;
-  bottom: 40px;
+  bottom: 60px;
   margin-left: 20px;
+}
+.hero-icons > a {
+  margin-right: 5px;
 }
 .hero-btn {
   color: white;

@@ -5,9 +5,14 @@ import {
   FaLinkedin,
   FaBars,
   FaTimes,
-  FaFacebookMessenger
+  FaFacebookMessenger,
 } from "react-icons/fa";
-import { IoIosArrowDown, IoMdMail, IoLogoYoutube } from "react-icons/io";
+import {
+  IoIosArrowDown,
+  IoMdMail,
+  IoLogoYoutube,
+  IoLogoTwitter,
+} from "react-icons/io";
 import "./App.css";
 import { latestWork, translation } from "./utils/data.js";
 import scrollToElement from "scroll-to-element";
@@ -102,6 +107,13 @@ function App() {
             {translation[language].heroTextPartFour}
           </span>
         </h1>
+        <h1 className="main-intro">
+          {" "}
+          {translation[language].heroTextPartFive}
+          <span className="intro-span">
+            {translation[language].heroTextPartSix}
+          </span>
+        </h1>
 
         <div className="hireme-wrapper">
           <div
@@ -128,6 +140,9 @@ function App() {
             target="_blank"
           >
             <IoLogoYoutube className="icon" />
+          </a>
+          <a href="https://twitter.com/iamrubik" target="_blank">
+            <IoLogoTwitter className="icon" />
           </a>
         </div>
         <div className="see-more-wrapper">
@@ -161,6 +176,15 @@ function App() {
         <div id="contact" />
         <div className="contact-text">{translation[language].letsTalk}</div>
         <div className="contact-buttons-container">
+          <a
+            className="contact-btn twitter"
+            href="https://twitter.com/iamrubik"
+            target="_blank"
+          >
+            <IoLogoTwitter className="contact-icons" />{" "}
+            {translation[language].twitter}
+          </a>
+          <div />
           <a
             className="contact-btn linkedin"
             href="https://www.linkedin.com/in/richard-bonneau/"
