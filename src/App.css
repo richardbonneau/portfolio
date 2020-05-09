@@ -90,19 +90,15 @@ h3 {
   background: #f1493c;
 }
 .facebook:hover {
-  color: black;
   background: #5f94ff;
 }
 .twitter:hover {
-  color: black;
   background: #109fea;
 }
 .linkedin:hover {
-  color: black;
   background: #109fea;
 }
 .email:hover {
-  color: black;
   background: #da7c75;
 }
 .icon {
@@ -323,6 +319,7 @@ h3 {
     display: none;
   }
   .contact-btn {
+    color: #c0c0c0;
     width: 440px;
   }
   .contact-subtitle {
