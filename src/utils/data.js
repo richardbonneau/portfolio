@@ -3,9 +3,9 @@ export const latestWork = [
     title: "Transient",
     image: "/images/transient.gif",
     description: {
-      en: `Transient is a tactical strategy game fused with deck building mechanics. The prototype was made in the space of ten days as an entry for the game jam JamCraft 5, and it won the first place out of 112 entries. A full release of this game is in the works, follow me on Twitter at @iamrubik for updates!`,
+      en: `Transient is a tactical strategy game fused with deck building mechanics. The prototype was made in the space of ten days as an entry for the game jam JamCraft 5, and it won the first place out of 112 entries. A full release of this game is in the works, follow me on Twitter at @sixthsoftware for updates!`,
       fr: `
-      Transient est un jeu de stratégie tactique fusionné avec des mécaniques de construction de deck. Le prototype a été réalisé en l'espace de dix jours en tant qu'entrée pour le GameJam JamCraft 5, et il a remporté la première place sur 112 entrées. Une version complète de ce jeu est en préparation, suivez-moi sur Twitter pour les mises à jour!`,
+      Transient est un jeu de stratégie tactique fusionné avec des mécaniques de construction de deck. Le prototype a été réalisé en l'espace de dix jours en tant qu'entrée pour le GameJam JamCraft 5, et il a remporté la première place sur 112 entrées. Une version complète de ce jeu est en préparation, suivez-moi sur Twitter @sixthsoftware pour les mises à jour!`,
     },
     features: ["Unity", "C#", "Blender"],
     projectUrl: "https://sixthmoon.itch.io/transient",
@@ -23,8 +23,7 @@ export const latestWork = [
       en: ["Flutter", "Provider", "Google AdMob", "In app purchases"],
       fr: ["Flutter", "Provider", "Google AdMob", "Achat dans l'application"],
     },
-    projectUrl:
-      "https://play.google.com/store/apps/details?id=com.richard.gloomhaven_assistant",
+    projectUrl: "https://play.google.com/store/apps/details?id=com.richard.gloomhaven_assistant",
     codeUrl: null,
   },
   {
@@ -57,10 +56,8 @@ export const latestWork = [
     title: "Pomodoro Productivity",
     image: "/images/pomo.gif",
     description: {
-      en:
-        "Lightweight productivity mobile app inspired by the Pomodoro method.",
-      fr:
-        "Application mobile qui s'inspire de la Technique de productivité Pomodoro",
+      en: "Lightweight productivity mobile app inspired by the Pomodoro method.",
+      fr: "Application mobile qui s'inspire de la Technique de productivité Pomodoro",
     },
     features: ["Flutter", "Push Notifications"],
     projectUrl:
@@ -84,18 +81,13 @@ export const latestWork = [
     title: "Inventorify",
     image: "/images/inventorify.gif",
     description: {
-      en:
-        "App made to modify a large quantity of products in the Shopify Admin Panel.",
+      en: "App made to modify a large quantity of products in the Shopify Admin Panel.",
       fr:
         "Application Shopify conçue afin de gérer une grande quantité de produits à l'interne, sur le panneau d'administrateur",
     },
     features: {
       en: ["React", "Shopify API", "Shopify's Polaris component library"],
-      fr: [
-        "React",
-        "API Shopify",
-        "Bibliothèque de composants Polaris par Shopify",
-      ],
+      fr: ["React", "API Shopify", "Bibliothèque de composants Polaris par Shopify"],
     },
     projectUrl: null,
     codeUrl: null,
@@ -128,10 +120,8 @@ export const translation = {
     work: "Projets",
     language: "English",
     heroTextPartOne: "Je suis un  ",
-    heroTextPartTwo:
-      "Développeur d'applications Web, Mobile et de Jeux Vidéos ",
-    heroTextPartThree:
-      "situé à Montréal, travaillant présentement en tant que ",
+    heroTextPartTwo: "Développeur d'applications Web, Mobile et de Jeux Vidéos ",
+    heroTextPartThree: "situé à Montréal, travaillant présentement en tant que ",
     heroTextPartFour: "Coach technique chez Bootcamps Concordia.",
     heroTextPartFive: "Je suis également ouvert à prendre des contrats de ",
     heroTextPartSix: "Freelance.",
@@ -141,8 +131,7 @@ export const translation = {
     linkCode: "Lien vers le code",
     notAvailable: "Non Disponible au public",
     workingTogether: "Vous êtes intéressé à travailler avec moi?",
-    letsTalk:
-      "Je suis ouvert aux contrats indépendants et au travail à distance. Parlons!",
+    letsTalk: "Je suis ouvert aux contrats indépendants et au travail à distance. Parlons!",
     linkedIn: "Message par LinkedIn",
     facebook: "Message par Facebook",
     email: "Message par Courriel",

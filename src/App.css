@@ -32,6 +32,9 @@ h3 {
   padding-top: 0;
   margin-top: 5px;
 }
+.project-description {
+  font-size: 17px;
+}
 
 .project-container {
   display: flex;
@@ -60,7 +63,8 @@ h3 {
   display: inline-block;
   padding: 12px;
   width: 85%;
-  color: black;
+  color: #e0e0e0;
+  font-size: 13px;
   font-size: 14px;
   margin: 5px;
   text-decoration: none;
@@ -319,7 +323,8 @@ h3 {
     display: none;
   }
   .contact-btn {
-    color: #c0c0c0;
+    color: #e0e0e0;
+    font-size: 13px;
     width: 440px;
   }
   .contact-subtitle {
