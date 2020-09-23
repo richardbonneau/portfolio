@@ -1,6 +1,13 @@
 import React, { useState, useEffect } from "react";
 import Project from "./components/project";
-import { FaGithub, FaLinkedin, FaBars, FaTimes, FaFacebookMessenger } from "react-icons/fa";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaBars,
+  FaTimes,
+  FaFacebookMessenger,
+  FaItchIo,
+} from "react-icons/fa";
 import { IoIosArrowDown, IoMdMail, IoLogoYoutube, IoLogoTwitter } from "react-icons/io";
 import "./App.css";
 import { latestWork, translation } from "./utils/data.js";
@@ -103,6 +110,9 @@ function App() {
           </div>
         </div>
         <div className="hero-icons">
+          <a href="https://sixthmoon.itch.io/" target="_blank">
+            <FaItchIo className="icon" />
+          </a>
           <a href="https://www.github.com/richardbonneau" target="_blank">
             <FaGithub className="icon" />
           </a>
@@ -112,7 +122,7 @@ function App() {
           <a href="https://www.youtube.com/channel/UCf9CaENsQfebsDg85bAjIVw" target="_blank">
             <IoLogoYoutube className="icon" />
           </a>
-          <a href="https://twitter.com/iamrubik" target="_blank">
+          <a href="https://twitter.com/sixthsoftware" target="_blank">
             <IoLogoTwitter className="icon" />
           </a>
         </div>
