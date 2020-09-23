@@ -81,6 +81,10 @@ h3 {
   font-size: 20px;
   margin: 36px 20px 0 20px;
 }
+.policy-wrapper {
+  background-color: white;
+  padding: 2% 14%;
+}
 .facebook {
   background: #4267b2;
 }
@@ -400,6 +404,9 @@ h3 {
 @media (min-width: 1150px) {
   .project-container {
     margin: 125px 70px;
+  }
+  .policy-wrapper {
+    margin: 0 10%;
   }
 }
 @media (min-width: 1440px) {
