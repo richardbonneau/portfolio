@@ -11,6 +11,11 @@
   user-select: none;
   -webkit-tap-highlight-color: transparent;
 }
+body {
+  background: #181a1b;
+  color: #efefef;
+}
+
 #root {
   display: flex;
   justify-content: center;
@@ -245,9 +250,9 @@ h3 {
   display: block;
 }
 .reference-btn {
-  color: black;
+  color: #efefef;
   display: inline-block;
-  border: 3px solid #000;
+  border: 3px solid #efefef;
   margin: 10px;
   cursor: pointer;
   padding: 15px 0;
@@ -257,8 +262,9 @@ h3 {
   text-align: center;
 }
 .reference-btn:hover {
-  color: white;
-  background: black;
+  color: black;
+  background: #efefef;
+  /* border-color: black; */
 }
 .reference-btn-not-available {
   color: var(--unavailable);
