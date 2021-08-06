@@ -4,7 +4,7 @@ export const latestWork = [
     image: "/images/soustitreur.PNG",
     description: {
       en: `A tool that allows you to add and edit subtitles in real time and then export a .srt file`,
-      fr: `Un outil qui permet d'ajouter et modifier des sous-titres en temps réel et ensuite exporter un fichier .srt`,
+      fr: `Un outil qui permet d'ajouter et modifier des sous-titres en temps réel pour ensuite exporter un fichier .srt`,
     },
     features: {
       en: ["React", "Redux","Peaks.js"],
@@ -90,7 +90,7 @@ export const translation = {
     heroTextPartOne: "I am a full stack ",
     heroTextPartTwo: "Web, Mobile and Game Developer ",
     heroTextPartThree: "living in Montreal, currently working as a ",
-    heroTextPartFour: "Technical Coach at Concordia Bootcamps.",
+    heroTextPartFour: "Shopify Developer at Molsoft.",
     heroTextPartFive: "I am open to",
     heroTextPartSix: " Freelance Contracts.",
     explore: "Explore",
@@ -111,7 +111,7 @@ export const translation = {
     heroTextPartOne: "Je suis un  ",
     heroTextPartTwo: "Développeur d'applications Web, Mobile et de Jeux Vidéos ",
     heroTextPartThree: "situé à Montréal, travaillant présentement en tant que ",
-    heroTextPartFour: "Coach technique chez Bootcamps Concordia.",
+    heroTextPartFour: "Développeur Shopify chez Molsoft.",
     heroTextPartFive: "Je suis également ouvert à prendre des contrats de ",
     heroTextPartSix: "Freelance.",
     explore: "Explorez",
