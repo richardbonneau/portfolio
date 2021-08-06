@@ -12,8 +12,6 @@
   -webkit-tap-highlight-color: transparent;
 }
 body {
-  background: #181a1b;
-  color: #efefef;
 }
 
 #root {
@@ -23,7 +21,8 @@ body {
 }
 .App {
   max-width: 2000px;
-  background: white;
+  background: #181a1b;
+  color: #efefef;
 }
 
 h2 {

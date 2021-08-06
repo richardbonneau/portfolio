@@ -1,29 +1,58 @@
 export const latestWork = [
   {
-    title: "Transient",
-    image: "/images/transient.gif",
+    title: "Sous-Titreur",
+    image: "/images/soustitreur.PNG",
     description: {
-      en: `Transient is a tactical strategy game fused with deck building mechanics. The prototype was made in the space of ten days as an entry for the game jam JamCraft 5, and it won the first place out of 112 entries. A full release of this game is in the works, follow me on Twitter at @sixthsoftware for updates!`,
-      fr: `
-      Transient est un jeu de stratégie tactique fusionné avec des mécaniques de construction de deck. Le prototype a été réalisé en l'espace de dix jours en tant qu'entrée pour le GameJam JamCraft 5, et il a remporté la première place sur 112 entrées. Une version complète de ce jeu est en préparation, suivez-moi sur Twitter @sixthsoftware pour les mises à jour!`,
+      en: `A tool that allows you to add and edit subtitles in real time and then export a .srt file`,
+      fr: `Un outil qui permet d'ajouter et modifier des sous-titres en temps réel et ensuite exporter un fichier .srt`,
     },
-    features: ["Unity", "C#", "Blender"],
-    projectUrl: "https://sixthmoon.itch.io/transient",
+    features: {
+      en: ["React", "Redux","Peaks.js"],
+      en: ["React", "Redux","Peaks.js"],
+    },
+    projectUrl: null,
     codeUrl: null,
+  },
+  {
+    title: "Cymkube",
+    image: "/images/cymk.gif",
+    description: {
+      en: `A wholesome color puzzle game.`,
+      fr: `Un jeu de puzzle de couleurs.`,
+    },
+    features: {
+      en: ["Godot", "Blender"],
+      fr: ["Godot", "Blender"],
+    },
+    projectUrl: "https://sixthmoongames.itch.io/cymkube",
+    codeUrl: null,
+  },
+  {
+    title: "SCP-747",
+    image: "/images/scp.PNG",
+    description: {
+      en: `A first-person perspective creepy story-centered adventure game.`,
+      fr: `Un jeu d'aventure sinistre avec perspective à la première personne.`,
+    },
+    features: {
+      en: ["Godot", "Blender"],
+      fr: ["Godot", "Blender"],
+    },
+    projectUrl: "https://sixthmoongames.itch.io/mcgamejam-2021",
+    codeUrl: "https://github.com/richardbonneau/mcgamejam-2021",
   },
   {
     title: "Gloomhaven Assistant",
     image: "/images/gloomhaven.gif",
     description: {
-      en: `Gloomhaven is a board game where you have to keep track of a lot of things. 
-       Gloomhaven Assistant aims to handle those for a smooth gameplay.`,
-      fr: `Gloomhaven Assistant vise à éliminer les tâches les plus longues que nécessite le jeu de société.`,
+      en: `An Assistant App for an existing board game. The apps can be linked together in order to play the board game remotely. The app has ~2000 active users and is available on both the Google Play Store and the Apple App Store.`,
+      fr: `Une application assistante pour un jeu de société. Les applis peuvent être liées ensemble pour permettre aux joueurs de jouer à distance. Environs 2000 utilisateurs actifs l'utilisent, et elle est disponible sur le Google Play Store ainsi que le Apple App Store.`,
     },
     features: {
-      en: ["Flutter", "Provider", "Google AdMob", "In app purchases"],
-      fr: ["Flutter", "Provider", "Google AdMob", "Achat dans l'application"],
+      en: ["Flutter", "Socket.io", "Provider", "Google AdMob", "In app purchases"],
+      fr: ["Flutter", "Socket.io", "Provider", "Google AdMob", "Achat dans l'application"],
     },
-    projectUrl: "https://play.google.com/store/apps/details?id=com.richard.gloomhaven_assistant",
+    projectUrl: "https://gloomhavenassistant.com",
     codeUrl: null,
   },
   {
@@ -49,46 +78,6 @@ export const latestWork = [
             site a été utilisé par des milliers d'utilisateurs simultanés et avait 80 000$ en prix à gagner dans chaque ville.`,
     },
     features: ["React", "Node Express", "MongoDB", "Firebase Auth"],
-    projectUrl: null,
-    codeUrl: null,
-  },
-  {
-    title: "Pomodoro Productivity",
-    image: "/images/pomo.gif",
-    description: {
-      en: "Lightweight productivity mobile app inspired by the Pomodoro method.",
-      fr: "Application mobile qui s'inspire de la Technique de productivité Pomodoro",
-    },
-    features: ["Flutter", "Push Notifications"],
-    projectUrl:
-      "https://play.google.com/store/apps/details?id=com.richardbonneau.pomodoro_productivity",
-    codeUrl: "https://github.com/richardbonneau/pomodoro_flutter",
-  },
-  {
-    title: "Sweeper.net",
-    image: "https://img.itch.zone/aW1nLzE2NzQ4OTUuanBn/347x500/jIlllj.jpg",
-    description: {
-      en:
-        "Game made within a month for the game jam 'Game Off 2018' held by github. The game won the 31st place out of 324 for theme interpretation and got partly funded on kickstarter.",
-      fr:
-        "Jeu réalisé dans un délai d'un mois pour le GameJam 'Game Off 2018' organisé par github. Le jeu a remporté la 31e place sur 324 pour l'interprétation thématique et a été partiellement financé sur Kickstarter.",
-    },
-    features: ["Unity", "C#", "Blender"],
-    projectUrl: "https://sixthmoon.itch.io/sweeper-net",
-    codeUrl: "https://github.com/richardbonneau/Game_Off_2018",
-  },
-  {
-    title: "Inventorify",
-    image: "/images/inventorify.gif",
-    description: {
-      en: "App made to modify a large quantity of products in the Shopify Admin Panel.",
-      fr:
-        "Application Shopify conçue afin de gérer une grande quantité de produits à l'interne, sur le panneau d'administrateur",
-    },
-    features: {
-      en: ["React", "Shopify API", "Shopify's Polaris component library"],
-      fr: ["React", "API Shopify", "Bibliothèque de composants Polaris par Shopify"],
-    },
     projectUrl: null,
     codeUrl: null,
   },
