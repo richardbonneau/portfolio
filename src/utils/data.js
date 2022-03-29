@@ -3,14 +3,28 @@ export const latestWork = [
     title: "Sous-Titreur",
     image: "/images/soustitreur.PNG",
     description: {
-      en: `A tool that allows you to add and edit subtitles in real time and then export a .srt file`,
+      en: `A tool that allows you to add and edit subtitles in real time and then export a .srt file.`,
       fr: `Un outil qui permet d'ajouter et modifier des sous-titres en temps réel pour ensuite exporter un fichier .srt`,
     },
     features: {
-      en: ["React", "Redux","Peaks.js"],
-      en: ["React", "Redux","Peaks.js"],
+      en: ["React", "Redux", "Peaks.js"],
+      en: ["React", "Redux", "Peaks.js"],
     },
     projectUrl: null,
+    codeUrl: null,
+  },
+  {
+    title: "Crayon15",
+    image: "/images/crayon.gif",
+    description: {
+      en: `Worked on an animated Hero on a shopify store`,
+      fr: `Travaillé sur un Hero animé sur un commerce shopify`,
+    },
+    features: {
+      en: ["Shopify", "Liquid"],
+      en: ["Shopify", "Liquid"],
+    },
+    projectUrl: "https://crayon15.com",
     codeUrl: null,
   },
   {
@@ -63,8 +77,7 @@ export const latestWork = [
       fr: `Freelancify est un service de facturation gratuit pour les pigistes. `,
     },
     features: ["React", "Firebase Auth", "Firebase Firestore"],
-    projectUrl: "https://www.freelancify.io/",
-
+    projectUrl: null,
     codeUrl: null,
   },
   {
@@ -92,7 +105,7 @@ export const translation = {
     heroTextPartThree: "living in Montreal, currently working as a ",
     heroTextPartFour: "Shopify Developer at Molsoft.",
     heroTextPartFive: "I am open to",
-    heroTextPartSix: " Freelance Contracts.",
+    heroTextPartSix: " Front-End or Full-Stack opportunities in React.",
     explore: "Explore",
     latestWork: "Latest Work",
     linkProject: "Link to Project",
@@ -112,8 +125,8 @@ export const translation = {
     heroTextPartTwo: "Développeur d'applications Web, Mobile et de Jeux Vidéos ",
     heroTextPartThree: "situé à Montréal, travaillant présentement en tant que ",
     heroTextPartFour: "Développeur Shopify chez Molsoft.",
-    heroTextPartFive: "Je suis également ouvert à prendre des contrats de ",
-    heroTextPartSix: "Freelance.",
+    heroTextPartFive: "Je suis ouvert aux ",
+    heroTextPartSix: "opportunitées de carrières en Front-End ou Full-Stack en React.",
     explore: "Explorez",
     latestWork: "Projets Récents",
     linkProject: "Lien vers le projet",
