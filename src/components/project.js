@@ -4,7 +4,7 @@ import { translation } from "../utils/data.js";
 import "../App.css";
 
 function Project(props) {
-  console.log("props", props.project);
+  // console.log("props", props.project);
   function renderFeatures() {
     let features = props.project.features;
     if (features.length !== undefined) return features.map((feat) => <li>{feat}</li>);
@@ -21,7 +21,7 @@ function Project(props) {
         <h3>{props.project.title}</h3>
         <div>
           <div className="project-description">{props.project.description[props.language]}</div>
-          <ul className="features-ul">{renderFeatures()}</ul>
+          {/* <ul className="features-ul">{renderFeatures()}</ul> */}
         </div>
         <div className="reference-btns-container">
           {props.project.projectUrl ? (

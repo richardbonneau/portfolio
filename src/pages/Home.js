@@ -8,7 +8,12 @@ import {
   FaFacebookMessenger,
   FaItchIo,
 } from "react-icons/fa";
-import { IoIosArrowDown, IoMdMail, IoLogoYoutube, IoLogoTwitter } from "react-icons/io";
+import {
+  IoIosArrowDown,
+  IoMdMail,
+  IoLogoYoutube,
+  IoLogoTwitter,
+} from "react-icons/io";
 import "../App.css";
 import { latestWork, translation } from "../utils/data.js";
 import scrollToElement from "scroll-to-element";
@@ -26,10 +31,22 @@ function Home() {
     setMenuOpened(false);
   }
 
+  function highlightEverySecondWord(text, i) {
+    return i % 2 === 0 ? (
+      <span>{text} </span>
+    ) : (
+      <span key={i} className="intro-span">
+        {text}
+      </span>
+    );
+  }
+
   useEffect(() => {
-    window.addEventListener("scroll", () => (isMenuOpened ? setMenuOpened(false) : null));
-    console.log("effect");
+    window.addEventListener("scroll", () =>
+      isMenuOpened ? setMenuOpened(false) : null
+    );
   });
+  console.log(translation[language].heroText);
   return (
     <div className="App">
       <div className="hero">
@@ -41,7 +58,11 @@ function Home() {
                 setMenuOpened(!isMenuOpened);
               }}
             >
-              {isMenuOpened ? <FaTimes className="hamburger" /> : <FaBars className="hamburger" />}
+              {isMenuOpened ? (
+                <FaTimes className="hamburger" />
+              ) : (
+                <FaBars className="hamburger" />
+              )}
             </div>
 
             <ul className={isMenuOpened ? "mobile-menu open" : "mobile-menu"}>
@@ -88,15 +109,10 @@ function Home() {
         </header>
 
         <h1 className="main-intro">
-          {translation[language].heroTextPartOne}
-          <span className="intro-span">{translation[language].heroTextPartTwo}</span>
-          {translation[language].heroTextPartThree}
-          <span className="intro-span">{translation[language].heroTextPartFour}</span>
+          {translation[language].heroText.map(highlightEverySecondWord)}
         </h1>
         <h1 className="main-intro">
-          {" "}
-          {translation[language].heroTextPartFive}
-          <span className="intro-span">{translation[language].heroTextPartSix}</span>
+          {translation[language].heroOpportunity.map(highlightEverySecondWord)}
         </h1>
 
         <div className="hireme-wrapper">
@@ -110,16 +126,22 @@ function Home() {
           </div>
         </div>
         <div className="hero-icons">
-          <a href="https://sixthmoon.itch.io/" target="_blank">
+          <a href="https://sixthmoongames.itch.io/" target="_blank">
             <FaItchIo className="icon" />
           </a>
           <a href="https://www.github.com/richardbonneau" target="_blank">
             <FaGithub className="icon" />
           </a>
-          <a href="https://www.linkedin.com/in/richard-bonneau/" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/richard-bonneau/"
+            target="_blank"
+          >
             <FaLinkedin className="icon" />
           </a>
-          <a href="https://www.youtube.com/channel/UCf9CaENsQfebsDg85bAjIVw" target="_blank">
+          <a
+            href="https://www.youtube.com/channel/UCf9CaENsQfebsDg85bAjIVw"
+            target="_blank"
+          >
             <IoLogoYoutube className="icon" />
           </a>
           <a href="https://twitter.com/sixthsoftware" target="_blank">
@@ -141,11 +163,19 @@ function Home() {
       {latestWork.map((project, i) => {
         let flexDirection = "";
         if (i % 2 === 1) flexDirection = "project-container-reversed";
-        return <Project project={project} flexDirection={flexDirection} language={language} />;
+        return (
+          <Project
+            project={project}
+            flexDirection={flexDirection}
+            language={language}
+          />
+        );
       })}
 
       <div className="contact-container">
-        <h2 className="contact-subtitle">{translation[language].workingTogether}</h2>
+        <h2 className="contact-subtitle">
+          {translation[language].workingTogether}
+        </h2>
         <div id="contact" />
         <div className="contact-text">{translation[language].letsTalk}</div>
         <div className="contact-buttons-container">
@@ -154,7 +184,8 @@ function Home() {
             href="https://twitter.com/sixthsoftware"
             target="_blank"
           >
-            <IoLogoTwitter className="contact-icons" /> {translation[language].twitter}
+            <IoLogoTwitter className="contact-icons" />{" "}
+            {translation[language].twitter}
           </a>
           <div />
           <a
@@ -162,7 +193,8 @@ function Home() {
             href="https://www.linkedin.com/in/richard-bonneau/"
             target="_blank"
           >
-            <FaLinkedin className="contact-icons" /> {translation[language].linkedIn}
+            <FaLinkedin className="contact-icons" />{" "}
+            {translation[language].linkedIn}
           </a>
           <div />
           <a
@@ -174,7 +206,11 @@ function Home() {
             {translation[language].facebook}
           </a>
           <div />
-          <a className="contact-btn email" href="mailto:info@richardbonneau.com" target="_blank">
+          <a
+            className="contact-btn email"
+            href="mailto:info@richardbonneau.com"
+            target="_blank"
+          >
             {" "}
             <IoMdMail className="contact-icons" /> {translation[language].email}
           </a>
@@ -185,7 +221,9 @@ function Home() {
           <input type="submit" />
         </form> */}
         </div>
-        <div className="footer">© Richard Bonneau {new Date().getFullYear()}</div>
+        <div className="footer">
+          © Richard Bonneau {new Date().getFullYear()}
+        </div>
       </div>
     </div>
   );
