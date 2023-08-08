@@ -3,7 +3,7 @@ export const latestWork = [
     title: "Closed Captioner",
     image: "/images/soustitreur.PNG",
     description: {
-      en: `Rebuilt from scratch the main tool used by one of the biggest closed caption company in Quebec. It allows you to seamlessly integrate and modify subtitles synchronously with video content, producing exportable .srt files.`,
+      en: `Rebuilt from scratch the main tool used by one of the biggest closed captions company in Quebec. It allows you to seamlessly integrate and modify subtitles synchronously with video content, producing exportable .srt files.`,
       fr: `Un outil qui permet d'ajouter et modifier des sous-titres en temps réel pour ensuite exporter un fichier .srt`,
     },
     features: {
@@ -31,8 +31,8 @@ export const latestWork = [
     title: "Cymkube",
     image: "/images/cymk.gif",
     description: {
-      en: `A wholesome color puzzle game built during a 1 week game jam. This project received notable recognition by the reviewers, securing the 3rd place among 71 participating entries.`,
-      fr: `Un jeu de puzzle de couleurs construit en 1 semaine pour un game jam. Ce projet a gagné la 3e place sur 71 participants.`,
+      en: `A wholesome color puzzle game built during a 1 week game jam. This project received notable recognition by the reviewers, who were professionals working in the game dev industry. It secured the 3rd place among 71 participating entries.`,
+      fr: `Un jeu de puzzle de couleurs construit en 1 semaine pour un game jam. Ce projet, jugé par des professionnels de l'industrie du jeu vidéo, a gagné la 3e place sur 71 participants.`,
     },
     features: {
       en: ["Godot", "Blender"],
