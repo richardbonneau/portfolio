@@ -32,7 +32,7 @@ export const latestWork = [
     image: "/images/cymk.gif",
     description: {
       en: `A wholesome color puzzle game built during a 1 week game jam. This project received notable recognition by the reviewers, securing the 3rd place among 71 participating entries.`,
-      fr: `Un jeu de puzzle de couleurs.`,
+      fr: `Un jeu de puzzle de couleurs construit en 1 semaine pour un game jam. Ce projet a gagné la 3e place sur 71 participants.`,
     },
     features: {
       en: ["Godot", "Blender"],
@@ -46,8 +46,8 @@ export const latestWork = [
     image: "/images/gloomhaven.gif",
     description: {
       en: `A companion app for the trending board game Gloomhaven. It handles game logic for you, negating the need to manage numerous physical game pieces and making the gameplay quicker and smoother. 
-      
       It introcuded a unique feature that allows users to link their apps together for remote gameplay which saw a lot of success during the pandemic. With close to 2000 active users, the app has effectively established its presence in Gloomhaven's community`,
+      fr: `Une application assistante pour un jeu de société. Les applis peuvent être liées ensemble pour permettre aux joueurs de jouer à distance. Environs 2000 utilisateurs actifs l'utilisent, et elle est disponible sur le Google Play Store ainsi que le Apple App Store.`,
     },
     features: {
       en: [
